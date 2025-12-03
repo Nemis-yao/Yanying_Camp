@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf3942f4-103b-45dd-a171-72bfb06a0406" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/Rumor/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/App.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +98,7 @@
       <workItem from="1764748055141" duration="692000" />
       <workItem from="1764749138576" duration="41000" />
       <workItem from="1764749408250" duration="4000" />
+      <workItem from="1764750268141" duration="837000" />
     </task>
     <servers />
   </component>

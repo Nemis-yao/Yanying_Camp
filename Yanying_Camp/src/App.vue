@@ -92,7 +92,6 @@
 
 
   </div>
-  <router-view></router-view>
 </template>
 <script lang="ts" setup>
 import {onMounted, ref} from 'vue'
@@ -271,30 +270,32 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
+/* 根容器铺满屏幕 */
 .bg {
   width: 100vw;
   height: 100vh;
   background-image: url("/bg.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; /* 关键：铺满保持比例 */
+  background-size: cover;
 }
+
+/* 导航栏 */
 .navbar {
   position: fixed;
-  font-size: 36px;
+  font-size: 2.2rem;
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 3.5rem;
   display: flex;
   align-items: center;
-  justify-content: center; /* 居中 ul */
+  justify-content: center;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255,255,255,0.2);
-  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
   color: white;
   z-index: 1000;
 }
@@ -302,7 +303,7 @@ onMounted(() => {
 .navbar ul {
   width: 100%;
   display: flex;
-  justify-content: space-around; /* 平铺整个宽度 */
+  justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -311,45 +312,46 @@ onMounted(() => {
 .navbar ul li {
   cursor: pointer;
   transition: color 0.3s;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .navbar ul li:hover {
-  color: #836fff; /* 悬浮变色 */
+  color: #836fff;
 }
+
+/* 左下角卡片 */
 .left-card {
   position: fixed;
-  left: 150px;                 /* 屏幕左侧 */
-  top: 50%;                   /* 垂直居中 */
+  left: 10rem;
+  top: calc(50% + 1.75rem);
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 12px;
-  padding: 16px 20px;
-  max-width: 500px;
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 30rem;
   color: white;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 0.4rem 2rem rgba(0,0,0,0.3);
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
 .left-card .highlight {
-  color: #836fff; /* 强调关键字 */
+  color: #836fff;
   font-weight: bold;
 }
 
 .left-card .buttons {
   display: flex;
-  gap: 10px;
-  margin-top: 12px;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
 }
 
 .left-card button {
   flex: 1;
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   background: #836fff;
   color: white;
   cursor: pointer;
@@ -359,37 +361,39 @@ onMounted(() => {
 .left-card button:hover {
   background: #a18fff;
 }
+
+/* 右下角卡片 */
 .right-card {
   position: fixed;
-  right: 300px;
-  top: 50%;
+  right: 15rem;
+  top: calc(50% + 1.75rem);
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 12px;
-  padding: 20px;
-  width: 400px;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 25rem;
   color: white;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 0.4rem 2rem rgba(0,0,0,0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
   text-align: center;
 }
 
 .card-image {
   width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
+  max-height: 15rem;
+  object-fit: contain;
+  border-radius: 0.5rem;
 }
 
 /* 输入框 */
 .card-input {
   width: 95%;
-  padding: 8px 12px;
-  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   font-size: 1rem;
@@ -398,9 +402,9 @@ onMounted(() => {
 /* 提交按钮 */
 .card-button {
   width: 100%;
-  padding: 10px 0;
+  padding: 0.5rem 0;
   border: none;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   background: #836fff;
   color: white;
   cursor: pointer;
@@ -416,15 +420,14 @@ onMounted(() => {
 .switch-buttons {
   width: 100%;
   display: flex;
-  gap: 10px;
-  margin-bottom: 8px;
+  gap: 0.5rem;
 }
 
 .switch-buttons button {
   flex: 1;
-  padding: 6px 0;
+  padding: 0.4rem 0;
   border: none;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   background: #555;
   color: white;
   cursor: pointer;
@@ -435,9 +438,7 @@ onMounted(() => {
   background: #777;
 }
 
-
-
-/* 遮罩 */
+/* 弹窗 */
 .modal {
   position: fixed;
   inset: 0;
@@ -448,82 +449,81 @@ onMounted(() => {
   justify-content: center;
 }
 
-/* 古风框体 */
 .gufeng-box {
-  width: 340px;
-  padding: 20px 30px;
+  width: 90%;
+  max-width: 22rem;
+  padding: 1rem 1.5rem;
   background: rgba(30, 30, 30, 0.85);
-  border: 2px solid rgba(200, 180, 140, 0.8);
-  border-radius: 10px;
-
+  border: 0.125rem solid rgba(200, 180, 140, 0.8);
+  border-radius: 0.625rem;
   color: #e8dfc8;
   text-align: center;
   position: relative;
-
-  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+  box-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
   animation: popup 0.25s ease;
 }
 
-/* 卷轴顶部 */
 .decor-top,
 .decor-bottom {
   width: 100%;
-  height: 14px;
+  height: 1rem;
   background: url('/decor/scroll_bar.png') center/contain no-repeat;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
-/* 标题 */
 .title {
-  font-size: 24px;
-  margin: 10px 0;
+  font-size: 1.5rem;
+  margin: 0.625rem 0;
   color: #f0e7d8;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
-/* 文本 */
 .content {
   color: #e6dcc6;
-  font-size: 16px;
-  margin: 10px 0 20px;
+  font-size: 1rem;
+  margin: 0.625rem 0 1.25rem;
 }
 
-/* 主按钮 */
 .next-btn {
   background: linear-gradient(#d1c097, #a8946a);
   color: #3c2e1f;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
   border: none;
   cursor: pointer;
   transition: transform .2s;
 }
-.next-btn:hover {
-  transform: scale(1.06);
-}
-
-/* 触发按钮 */
-.start-btn {
-  padding: 10px 18px;
-  background: #836fff;
-  border: none;
-  color: white;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-}
+.next-btn:hover { transform: scale(1.06); }
 
 /* 弹出动画 */
 @keyframes popup {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
+
+/* =================== 手机端适配 =================== */
+@media (max-width: 768px) {
+  .left-card, .right-card {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    width: 90%;
+    margin: 1rem auto;
+    padding-top: 4rem;
+  }
+
+  .switch-buttons, .left-card .buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navbar { font-size: 1rem; height: 3rem; }
+  .card-image { max-height: 12rem; }
+  .gufeng-box { max-width: 95%; width: 95%; }
+}
+
 </style>
