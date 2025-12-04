@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf3942f4-103b-45dd-a171-72bfb06a0406" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/components/GufengModal.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/components/LeftCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/components/Navbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/components/RightCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/data/floatWords.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/directives/float.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/types/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/views/HomePage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/router/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="Vue Composition API Component" />
       </list>
     </option>
@@ -27,6 +38,9 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="36JO5jdASxprRhl1kynCn0nnKOO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -99,6 +113,7 @@
       <workItem from="1764749138576" duration="41000" />
       <workItem from="1764749408250" duration="4000" />
       <workItem from="1764750268141" duration="837000" />
+      <workItem from="1764816294209" duration="2772000" />
     </task>
     <servers />
   </component>
