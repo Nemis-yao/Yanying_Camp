@@ -21,7 +21,7 @@
 
 <style scoped>
 .left-card {
-  margin-top: 45rem;
+  margin-top: 10rem;
   margin-left: 10rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);

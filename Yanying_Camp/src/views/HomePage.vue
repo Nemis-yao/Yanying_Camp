@@ -3,7 +3,10 @@
     <el-row>
       <!--右边-->
       <el-col :span="8">
-        <LeftCard @details="showDetails" @open-step="openStep"/>
+        <el-row>
+          <el-col :span="24"> <TypingLoop :texts="messages" /></el-col>
+          <el-col :span="24"><LeftCard @details="showDetails" @open-step="openStep"/></el-col>
+        </el-row>
       </el-col>
       <!--左边-->
       <el-col :span="16">
@@ -20,7 +23,7 @@
                   <el-col :span="16">
                     <div class="description">{{ item.description }}</div>
                   </el-col>
-                  <el-col :offset="6" :span="2" @click="goTo(item.link)">前往</el-col>
+                  <el-col :offset="6" :span="2" @click="goTo(item.link)" class="clickable">前往</el-col>
                 </el-row>
               </template>
             </el-card>
@@ -36,7 +39,7 @@
                   <el-col :span="16">
                     <div class="description">{{ item.description }}</div>
                   </el-col>
-                  <el-col :offset="6" :span="2" @click="goTo(item.link)">前往</el-col>
+                  <el-col :offset="6" :span="2" @click="goTo(item.link)" class="clickable">前往</el-col>
                 </el-row>
               </template>
             </el-card>
@@ -66,6 +69,7 @@ import {ElMessage} from 'element-plus'
 import LeftCard from "@/components/LeftCard.vue";
 import GufengModal from "@/components/GufengModal.vue";
 import {useRouter} from "vue-router";
+import TypingLoop from "@/components/TypingLoop.vue";
 
 const images: ImageItem[] = [
   {url: '/images/六神无主.png', tips: '四个字--成语'},
@@ -204,9 +208,20 @@ const navBar_bottom = ref([
 ])
 const router = useRouter()
 const goTo = (url: string) => {
-  router.push(url)
+  if (url == '/JianHuXing' || url == '/'){
+    router.push(url)
+  } else {
+    ElMessage.primary('太懒了，没开发')
+  }
+
 }
 
+const messages: string[] = [
+  '明明还是一个小孩子，为什么要着急长大呢！',
+  '希望你开心每一天！开心最重要！',
+  '每天都有新的故事等你发现。',
+  '有癫当场就发,有气当场就撒,有点事就傻乐,别和自己过不去!'
+]
 </script>
 
 <style scoped>
@@ -259,4 +274,10 @@ const goTo = (url: string) => {
   overflow: hidden; /* 超出隐藏 */
   text-overflow: ellipsis; /* 多余显示省略号 */
 }
+
+.clickable {
+  cursor: pointer; /* 鼠标变手型 */
+  text-align: center; /* 可选：居中显示文字 */
+}
+
 </style>
