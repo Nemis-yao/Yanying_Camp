@@ -9,9 +9,9 @@ const router = createRouter({
       component:()=>import('@/views/HomePage.vue')
     },
     {
-      path:'/404',
-      name:'Rumor',
-      component:()=>import('@/Rumor/index.vue')
+      path:'/FengWen',
+      name:'FengWen',
+      component:()=>import('@/views/FengWen.vue')
     }
   ],
 })

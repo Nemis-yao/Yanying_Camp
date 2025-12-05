@@ -1,7 +1,12 @@
 <template>
   <nav class="navbar">
     <ul>
-      <li v-for="item in menuItems" :key="item.path" @click="$emit('nav-click', item.path)">
+      <li
+        v-for="item in menuItems"
+        :key="item.path"
+        @click="$emit('nav-click', item.path)"
+        :class="{ active: currentPath === item.path }"
+      >
         {{ item.name }}
       </li>
     </ul>
@@ -9,8 +14,11 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { useRoute } from 'vue-router'
 import type { MenuItem } from '@/types/index.ts'
+
+const route = useRoute()
 
 const menuItems = ref<MenuItem[]>([
   { name:'首页', path:'/' },
@@ -19,7 +27,11 @@ const menuItems = ref<MenuItem[]>([
   { name:'我的', path:'/my' },
   { name:'加入我们', path:'/join' }
 ])
+
+// 监听当前路径
+const currentPath = computed(() => route.path)
 </script>
+
 
 <style scoped>
 .navbar {
@@ -59,6 +71,24 @@ const menuItems = ref<MenuItem[]>([
 .navbar ul li:hover {
   color: #836fff;
 }
+
+.navbar ul li.active {
+  position: relative;
+  color: #836fff;
+}
+
+.navbar ul li.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem; /* 下划线位置 */
+  width: 100%;
+  height: 2px;
+  background-color: #ff69b4; /* 粉红色下划线 */
+  border-radius: 1px;
+}
+
+
 
 /* 手机端适配 */
 @media (max-width: 768px) {

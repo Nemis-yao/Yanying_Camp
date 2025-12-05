@@ -32,7 +32,8 @@ import Navbar from '../components/Navbar.vue'
 import LeftCard from '../components/LeftCard.vue'
 import RightCard from '../components/RightCard.vue'
 import GufengModal from '../components/GufengModal.vue'
-import { ElMessage, ElMessageBox } from 'element-plus'
+import { ElMessage } from 'element-plus'
+import { useRouter } from 'vue-router'
 
 const images: ImageItem[] = [
   { url:'/images/六神无主.png', tips:'四个字--成语' },
@@ -85,10 +86,11 @@ const modalTitle = computed(() => step.value===1?'初见宗门': step.value===2?
 const modalContent = computed(() => step.value===1?'俺不中类，你居然真的想加入我们。': step.value===2?'俺不中类，你居然没有退出？':'俺不中类，你居然真的要加入，请在《燕云十六声》中搜索。')
 const modalButton = computed(() => step.value<3?'确定':'加入成功（？）')
 
+const router = useRouter()
 // 导航点击
 function navClick(path: string) {
   if (path === '/fw') {
-    ElMessageBox.alert('其实我也没有开发好', '别生气', { confirmButtonText:'OK' })
+    router.push({ path: '/FengWen' })
     return
   }
   // 其他情况提示
