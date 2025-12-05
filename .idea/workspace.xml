@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf3942f4-103b-45dd-a171-72bfb06a0406" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/data/chapters.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/data/endings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/story/storyEngine.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/story/storyLoader.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/story/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yanying_Camp/public/nav/nav_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yanying_Camp/public/nav/nav_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/data/texts.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/views/JianHuXing.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/Rumor/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/views/FengWen.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yanying_Camp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yanying_Camp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/components/LeftCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/components/LeftCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/components/Navbar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/router/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/views/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/views/HomePage.vue" afterDir="false" />
     </list>
@@ -50,7 +53,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;串子文案&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -70,6 +73,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\WebstormProjects\Yanying_Camp\Yanying_Camp\public\nav" />
       <recent name="C:\Users\admin\WebstormProjects\Yanying_Camp\Yanying_Camp\src\story" />
       <recent name="C:\Users\admin\WebstormProjects\Yanying_Camp\Yanying_Camp\src" />
       <recent name="C:\Users\admin\WebstormProjects\Yanying_Camp\Yanying_Camp\public" />
@@ -121,6 +125,9 @@
       <workItem from="1764816294209" duration="2772000" />
       <workItem from="1764827288259" duration="3896000" />
       <workItem from="1764834399446" duration="3177000" />
+      <workItem from="1764894766403" duration="6027000" />
+      <workItem from="1764900849591" duration="11000" />
+      <workItem from="1764901151497" duration="4315000" />
     </task>
     <servers />
   </component>

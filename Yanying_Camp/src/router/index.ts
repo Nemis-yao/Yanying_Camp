@@ -12,6 +12,11 @@ const router = createRouter({
       path:'/FengWen',
       name:'FengWen',
       component:()=>import('@/views/FengWen.vue')
+    },
+    {
+      path:'/JianHuXing',
+      name:'JianHuXing',
+      component:()=>import('@/views/JianHuXing.vue')
     }
   ],
 })

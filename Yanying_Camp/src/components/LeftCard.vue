@@ -21,10 +21,8 @@
 
 <style scoped>
 .left-card {
-  position: fixed;
-  left: 10rem;
-  top: calc(50% + 1.75rem);
-  transform: translateY(-50%);
+  margin-top: 45rem;
+  margin-left: 10rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 1rem;
