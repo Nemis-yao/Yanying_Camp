@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf3942f4-103b-45dd-a171-72bfb06a0406" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Yanying_Camp/public/WA/WA-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yanying_Camp/public/WA/WA-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/components/FloatingNav.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/components/TypingLoop.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yanying_Camp/src/data/Copywriting.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/components/LeftCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/components/LeftCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/views/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/views/HomePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yanying_Camp/src/views/JianHuXing.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/src/views/JianHuXing.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yanying_Camp/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Yanying_Camp/vite.config.ts" afterDir="false" />
-    </list>
+    <list default="true" id="cf3942f4-103b-45dd-a171-72bfb06a0406" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,6 +115,7 @@
       <workItem from="1764894766403" duration="6027000" />
       <workItem from="1764900849591" duration="11000" />
       <workItem from="1764901151497" duration="14023000" />
+      <workItem from="1764916615935" duration="92000" />
     </task>
     <servers />
   </component>
